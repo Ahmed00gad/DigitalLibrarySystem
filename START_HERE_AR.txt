@@ -1,0 +1,19 @@
+Digital Library System — Unified Designer source package
+========================================================
+
+المحتوى:
+- MainForm.Designer.cs: الواجهة الرئيسية، Books, Members, Circulation, Reports, Dashboard, Network.
+- MainForm.cs: الأحداث، البحث، الاستعارة، الإرجاع، التقارير، والخدمات.
+- BookDialog.Designer.cs: نافذة إضافة/تعديل الكتب في Designer.
+- بقية النوافذ (BorrowDialog, MemberDialog, ReturnDialog, LoginForm) محفوظة كما جاءت في مشروع Part 2 ولا يُدّعى أنها تحولت بالكامل إلى Designer.
+
+مهم:
+1. فك الملف في مجلد مستقل؛ لا تكتب فوق المشروع العامل مباشرة.
+2. افتح DigitalLibrarySystem.sln باستخدام Visual Studio على Windows مع .NET 10 SDK وWindows Forms.
+3. شغّل Build > Rebuild Solution. لم تُجرَ عملية بناء على Windows ضمن هذه البيئة.
+4. افتح MainForm.cs > View Designer وجرّب الصفحات الست.
+5. اضغط F5 واختبر Books, Members, Loans, Dashboard, Reports, Network وتسجيل الدخول والإضافة.
+6. لم يتم تضمين library.db أو bin/obj. قاعدة البيانات الأصلية تُحفظ عندك فقط، ويمكن نسخ نسخة احتياطية منها إلى مسار التشغيل إن أردت استعادة بياناتك بعد اكتمال الاختبار.
+7. يُفضّل عدم الضغط على Save في Designer على جميع الصفحات دفعة واحدة قبل عمل نسخة احتياطية؛ فقد يتعامل Designer بشكل خاص مع عناصر GDI+ المخصصة.
+
+هذا تجميع source-first ولم يتم التحقق من بناء وتشغيل تطبيق Windows Forms على Windows.
